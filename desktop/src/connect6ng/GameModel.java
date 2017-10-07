@@ -262,7 +262,7 @@ public class GameModel extends Observable implements Serializable  {
 	 * @return 上一步的颜色
 	 */
 	public int getLastColor(){
-		return (getSize()%4)/2;
+		return ((getSize()+1)%4)/2;
 	}
 	
 	/** 返回当前可以下的颜色
